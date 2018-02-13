@@ -37,11 +37,4 @@ class message:
 
 
     def __str__(self):
-        return "Dear %s, \n %s \n sincerely, \n %s", self.sender, self.message, self.reciever
-
-
-
-
-x = messageService()
-x.newUser("Aaron", "Shakib", "aaronshakib@gmail.com")
-print(x.getUser("aaronshakib@gmail.com"))
+        return "Dear %s, \n %s \nsincerely, \n%s" % (self.sender, self.message, self.reciever)
